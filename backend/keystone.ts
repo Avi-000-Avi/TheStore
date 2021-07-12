@@ -1,8 +1,10 @@
-import {User} from './schemas/User';
 import 'dotenv/config';
 import {createAuth} from '@keystone-next/auth';
 import { config, createSchema } from '@keystone-next/keystone/schema';
 import { withItemData,statelessSessions } from '@keystone-next/keystone/session';
+import {User} from './schemas/User';
+import {Product} from './schemas/Products';
+import {ProductImage} from './schemas/ProductImage';
 
 
 
@@ -46,6 +48,8 @@ const sessionConfig ={
     lists: createSchema({
         //Schema items go in here
         User,
+        Product,
+        ProductImage,
     }),
     ui: {
         // Show the UI only for poeple who pass this test
