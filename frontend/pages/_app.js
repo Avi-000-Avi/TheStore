@@ -17,10 +17,12 @@ function MyApp({ Component, pageProps, apollo }) {
     <Page>
       <Component {...pageProps} />
     </Page>
-    </ApolloProvider>
+    </ApolloProvider> 
   );
 }
 
+//Tell NextJs that it needs to go and fetch all of the queries from all the children components\
+//If any of the pages have getIntitialProps  then wait and go and fetch it
 MyApp.getInititalProps = async function({Component, ctx}){
   let pageProps = {};
   if(Component.getInititalProps){
