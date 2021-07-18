@@ -6,21 +6,15 @@ The application has six main models — Users, Items, Orders, CartItems, OrderIt
 The app also includes many server side bits including authentication, permissions, sending email, uploading images, and charging credit cards.
 
 
-|      |   |   |   |   |
-|------|---|---|---|---|
-|      |   |   |   |   |
-|      |   |   |   |   |
-|      |   |   |   |   |
-
-Frontend
-  React alongside 
+##Frontend
+  ###React alongside 
   Next.js for server side rendering, routing and tooling
   Styled Components for styling
   Context for Managing Local State
   Apollo's React Hooks for interfacing with Apollo Client
   Jest & React Testing Library for Testing
 
-  Apollo Client for Data Management
+  ###Apollo Client for Data Management
   Performing GraphQL Mutations(create, update, delete)
   Fetching data via GraphQL Queries
   Caching GraphQL Data
@@ -28,7 +22,7 @@ Frontend
   Apollo Client replaces the need for redux + data fetching/caching libraries
 
 
-Backend
+##Backend
   Admin Interface to manage data
   Provides a set of GraphQL CRUD APIs for a MongoDB or Prisma Database
   Schema Definition
