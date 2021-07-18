@@ -6,11 +6,11 @@ The application has six main models — Users, Items, Orders, CartItems, OrderIt
 The app also includes many server side bits including authentication, permissions, sending email, uploading images, and charging credit cards.
 
 
-|   |   |   |   |   |
-|---|---|---|---|---|
-|   |   |   |   |   |
-|   |   |   |   |   |
-|   |   |   |   |   |
+|      |   |   |   |   |
+|------|---|---|---|---|
+|      |   |   |   |   |
+|      |   |   |   |   |
+|      |   |   |   |   |
 
 Frontend
   React alongside 
