@@ -27,7 +27,7 @@ const CREATE_PRODUCT_MUTATION = gql`
       id
       price
       description
-      name
+      name 
     }
   }
 `;
@@ -48,6 +48,7 @@ export default function CreateProduct() {
     CREATE_PRODUCT_MUTATION,
     {
       variables: inputs,
+      //25 - Refetching Queries after a Successful Mutation
       refetchQueries:[{query:ALL_PRODUCTS_QUERY}]
     }
   );
@@ -58,13 +59,10 @@ export default function CreateProduct() {
         // Submit the inputfields to the backend:
         const res = await createProduct();
         clearForm();
-        //Go to the product's page!
-        
+        //Go to the product's page! 
           Router.push({
             pathname:`/product/${res.data.createProduct.id}`,
           });
-        
-         
       }}
     >
       <DisplayError error={error} />
