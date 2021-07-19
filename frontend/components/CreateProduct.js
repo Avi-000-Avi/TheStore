@@ -1,10 +1,12 @@
+import { useState,useEffect } from 'react';
 import { useMutation } from '@apollo/client';
 import gql from 'graphql-tag';
 import useForm from '../lib/useForm';
 import DisplayError from './ErrorMessage';
 import { ALL_PRODUCTS_QUERY } from './Products';
 import Form from './styles/Form';
-
+import Router from "next/router";
+ 
 const CREATE_PRODUCT_MUTATION = gql`
   mutation CREATE_PRODUCT_MUTATION(
     # Which variables are getting passed in? And What types are they
@@ -31,6 +33,11 @@ const CREATE_PRODUCT_MUTATION = gql`
 `;
 
 export default function CreateProduct() {
+  const [productData, setProductData] = useState();
+
+    
+  
+
   const { inputs, handleChange, clearForm, resetForm } = useForm({
     image: '',
     name: 'Nice Shoes',
@@ -48,10 +55,16 @@ export default function CreateProduct() {
     <Form
       onSubmit={async (e) => {
         e.preventDefault();
-        console.log(inputs);
         // Submit the inputfields to the backend:
-        await createProduct();
+        const res = await createProduct();
         clearForm();
+        //Go to the product's page!
+        
+          Router.push({
+            pathname:`/product/${res.data.createProduct.id}`,
+          });
+        
+         
       }}
     >
       <DisplayError error={error} />
