@@ -6,6 +6,7 @@ export default function UpdatePage({query}){
     const {
         query: { id },
       } = useRouter();
+      
     return ( 
       <div>
           <UpdateProduct id ={id}/>
