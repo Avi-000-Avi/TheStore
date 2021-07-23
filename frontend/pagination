@@ -4,5 +4,7 @@ Filter the products for the current page
 Deal with Cache invalidation
 
 Query String routing
+/products?page=2
 
 File Based routing
+/products/2
