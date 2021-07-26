@@ -6,6 +6,7 @@ import {User} from './schemas/User';
 import {Product} from './schemas/Products';
 import {ProductImage} from './schemas/ProductImage';
 import { insertSeedData } from './seed-data';
+import { sendPasswordResetEmail } from './lib/mail';
 
 
 
@@ -22,7 +23,8 @@ const {withAuth} =createAuth({
    }, 
    passwordResetLink:{
        async sendToken(args){
-           console.log(args);
+           //Send the email
+           await sendPasswordResetEmail(args.token,args.identity);
        }
    }
 });
