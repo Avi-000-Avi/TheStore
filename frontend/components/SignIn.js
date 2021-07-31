@@ -66,7 +66,7 @@ export default function  SignIn(){
 
 
     //method POST also does't let the url have the input after submit of the input
-    return (<Form onSubmit={handleSubmit}> 
+    return (<Form  method="POST" onSubmit={handleSubmit}> 
         <h2>Sign Into Your Account</h2>
         <Error error={data?.authenticateUserWithPassword}/>
         <fieldset>
