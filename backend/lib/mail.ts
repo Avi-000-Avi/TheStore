@@ -2,7 +2,7 @@ import { createTransport, getTestMessageUrl } from 'nodemailer';
 
 const transport = createTransport({
   host: process.env.MAIL_HOST,
-  port: process.env.MAIL_PORT,
+  port: Number(process.env.MAIL_PORT),
   auth: {
     user: process.env.MAIL_USER,
     pass: process.env.MAIL_PASS,
@@ -36,6 +36,7 @@ export interface MailResponse {
   envelope: Envelope;
   messageId: string;
 }
+
 export interface Envelope {
   from: string;
   to?: (string)[] | null;
@@ -57,6 +58,5 @@ export async function sendPasswordResetEmail(
   })) as MailResponse;
   if(process.env.MAIL_USER.includes('ethereal.email')) {
     console.log(`💌 Message Sent!  Preview it at ${getTestMessageUrl(info)}`);
-
   }
 }

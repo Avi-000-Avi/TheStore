@@ -5,6 +5,7 @@ import { withItemData,statelessSessions } from '@keystone-next/keystone/session'
 import {User} from './schemas/User';
 import {Product} from './schemas/Products';
 import {ProductImage} from './schemas/ProductImage';
+import { CartItem } from './schemas/CartItem';
 import { insertSeedData } from './seed-data';
 import { sendPasswordResetEmail } from './lib/mail';
 
@@ -64,6 +65,7 @@ const sessionConfig ={
         User,
         Product,
         ProductImage,
+        CartItem  
     }),
     ui: {
         // Show the UI only for poeple who pass this test
