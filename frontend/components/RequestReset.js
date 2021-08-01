@@ -17,6 +17,7 @@ export default function RequestReset() {
   const { inputs, handleChange, resetForm } = useForm({
     email: '',
   });
+  
   const [signup, { data, loading, error }] = useMutation(
     REQUEST_RESET_MUTATION,
     {
