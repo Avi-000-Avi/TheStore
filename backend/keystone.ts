@@ -8,6 +8,7 @@ import {ProductImage} from './schemas/ProductImage';
 import { CartItem } from './schemas/CartItem';
 import { insertSeedData } from './seed-data';
 import { sendPasswordResetEmail } from './lib/mail';
+import { extendGraphqlSchema } from './mutations';
 
 
 
@@ -67,6 +68,7 @@ const sessionConfig ={
         ProductImage,
         CartItem  
     }),
+    extendGraphqlSchema:extendGraphqlSchema,
     ui: {
         // Show the UI only for poeple who pass this test
         isAccessAllowed: ({ session }) =>
