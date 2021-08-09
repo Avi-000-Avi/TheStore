@@ -10,7 +10,7 @@ The app also includes many server side bits including authentication, permission
 
 ![alt text](<https://github.com/Avi-000-Avi/TheStore/master/signin.png>)
 
-![alt text](https://github.com/Avi-000-Avi/TheStore/blob/master/image.jpg?raw=true)
+![alt text](https://github.com/Avi-000-Avi/TheStore/blob/master/signin.png)
 
 
 ## Frontend
