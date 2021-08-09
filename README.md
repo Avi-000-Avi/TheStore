@@ -10,6 +10,9 @@ The app also includes many server side bits including authentication, permission
 
 ![alt text](<https://github.com/Avi-000-Avi/TheStore/master/signin.png>)
 
+![alt text](https://github.com/Avi-000-Avi/TheStore/blob/master/image.jpg?raw=true)
+
+
 ## Frontend
 ### React alongside 
   - Next.js for server side rendering, routing and tooling
