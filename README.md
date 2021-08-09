@@ -6,11 +6,7 @@ The application has six main models — Users, Items, Orders, CartItems, OrderIt
 The app also includes many server side bits including authentication, permissions, sending email, uploading images, and charging credit cards.
 
 
-![alt text](<https://github.com/Avi-000-Avi/TheStore/master/home.png>)
-
-![alt text](<https://github.com/Avi-000-Avi/TheStore/master/signin.png>)
-
-![alt text](https://github.com/Avi-000-Avi/TheStore/blob/master/signin.png)
+![home](https://user-images.githubusercontent.com/29177676/128729210-ed649002-147d-4810-b1b4-febd2f23cb12.png)
 
 
 ## Frontend
