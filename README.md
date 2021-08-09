@@ -6,6 +6,10 @@ The application has six main models — Users, Items, Orders, CartItems, OrderIt
 The app also includes many server side bits including authentication, permissions, sending email, uploading images, and charging credit cards.
 
 
+![alt text](<https://github.com/Avi-000-Avi/netflix_clone/blob/master/home.png>)
+
+![alt text](<https://github.com/Avi-000-Avi/netflix_clone/blob/master/signin.png>)
+
 ## Frontend
 ### React alongside 
   - Next.js for server side rendering, routing and tooling
