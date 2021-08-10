@@ -1,1 +1,0 @@
-{"ast":null,"code":"export { default } from './index.js';","map":{"version":3,"sources":["/home/avinash/Desktop/Projects/TheStore/frontend/pages/products/[page].js"],"names":["default"],"mappings":"AAAA,SAAQA,OAAR,QAAsB,YAAtB","sourcesContent":["export {default} from './index.js';"]},"metadata":{},"sourceType":"module"}
