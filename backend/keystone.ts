@@ -6,6 +6,7 @@ import {User} from './schemas/User';
 import {Product} from './schemas/Product';
 import {OrderItem} from './schemas/OrderItem';
 import {Order} from './schemas/Order';
+import {Role} from './schemas/Role';
 
 import {ProductImage} from './schemas/ProductImage';
 import { CartItem } from './schemas/CartItem';
@@ -71,7 +72,8 @@ const sessionConfig ={
         ProductImage,
         CartItem,
         OrderItem,
-        Order  
+        Order,
+        Role
     }),
     extendGraphqlSchema:extendGraphqlSchema,
     ui: {
