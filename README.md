@@ -10,7 +10,8 @@ The app also includes many server side bits including authentication, permission
 
 ![signin](https://user-images.githubusercontent.com/29177676/128729301-a56b7df3-2d8f-4632-a736-ff263bc6f915.png)
 
-
+###Gradient Taken from
+https://www.eggradients.com/category/gray-gradient
 
 ## Frontend
 ### React alongside 
